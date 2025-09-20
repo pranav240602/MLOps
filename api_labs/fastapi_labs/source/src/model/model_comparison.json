@@ -1,0 +1,50 @@
+{
+    "Random Forest": {
+        "accuracy": 0.9736842105263158,
+        "precision": 1.0,
+        "recall": 0.9285714285714286,
+        "f1_score": 0.9629629629629629,
+        "roc_auc": 0.9966931216931217,
+        "status": "success"
+    },
+    "Gradient Boosting": {
+        "accuracy": 0.9298245614035088,
+        "precision": 0.925,
+        "recall": 0.8809523809523809,
+        "f1_score": 0.9024390243902439,
+        "roc_auc": 0.9833002645502645,
+        "status": "success"
+    },
+    "Logistic Regression": {
+        "accuracy": 0.9649122807017544,
+        "precision": 0.975,
+        "recall": 0.9285714285714286,
+        "f1_score": 0.9512195121951219,
+        "roc_auc": 0.996031746031746,
+        "status": "success"
+    },
+    "Decision Tree": {
+        "accuracy": 0.9385964912280702,
+        "precision": 0.926829268292683,
+        "recall": 0.9047619047619048,
+        "f1_score": 0.9156626506024096,
+        "roc_auc": 0.9424603174603174,
+        "status": "success"
+    },
+    "Naive Bayes": {
+        "accuracy": 0.9210526315789473,
+        "precision": 0.9230769230769231,
+        "recall": 0.8571428571428571,
+        "f1_score": 0.8888888888888888,
+        "roc_auc": 0.9890873015873015,
+        "status": "success"
+    },
+    "SVM": {
+        "accuracy": 0.9736842105263158,
+        "precision": 1.0,
+        "recall": 0.9285714285714286,
+        "f1_score": 0.9629629629629629,
+        "roc_auc": 0.9947089947089947,
+        "status": "success"
+    }
+}

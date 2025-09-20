@@ -1,0 +1,108 @@
+{
+    "features": [
+        "area_worst",
+        "concave points_worst",
+        "concave points_mean",
+        "perimeter_worst",
+        "perimeter_mean",
+        "radius_worst",
+        "concavity_mean",
+        "radius_mean",
+        "area_mean",
+        "concavity_worst",
+        "area_se",
+        "texture_worst",
+        "compactness_worst",
+        "texture_mean",
+        "compactness_mean",
+        "radius_se",
+        "smoothness_worst",
+        "perimeter_se",
+        "symmetry_worst",
+        "smoothness_mean",
+        "compactness_se",
+        "symmetry_se",
+        "symmetry_mean",
+        "texture_se",
+        "concavity_se",
+        "fractal_dimension_se",
+        "smoothness_se",
+        "concave points_se",
+        "fractal_dimension_worst",
+        "fractal_dimension_mean"
+    ],
+    "importance": [
+        0.1637251269319369,
+        0.12604794259656224,
+        0.09309513822640315,
+        0.08824376529533846,
+        0.08623414189786495,
+        0.08003910241401288,
+        0.05862842898278015,
+        0.04388223410744234,
+        0.04035334218138154,
+        0.03349127462580331,
+        0.031428318555583604,
+        0.02021991709639779,
+        0.020073949657668674,
+        0.014253692169552,
+        0.01356691070555,
+        0.01232462640242998,
+        0.011778204489244435,
+        0.009686744960008804,
+        0.009225234786867754,
+        0.007151704627725353,
+        0.005565150123476119,
+        0.00471909647347816,
+        0.0041073745653831,
+        0.003816213539753373,
+        0.003535931755392217,
+        0.003099650527963033,
+        0.0030489756020980444,
+        0.0029746686915237065,
+        0.0029262534022845865,
+        0.002756884608093655
+    ],
+    "top_10": [
+        {
+            "feature": "area_worst",
+            "importance": 0.1637251269319369
+        },
+        {
+            "feature": "concave points_worst",
+            "importance": 0.12604794259656224
+        },
+        {
+            "feature": "concave points_mean",
+            "importance": 0.09309513822640315
+        },
+        {
+            "feature": "perimeter_worst",
+            "importance": 0.08824376529533846
+        },
+        {
+            "feature": "perimeter_mean",
+            "importance": 0.08623414189786495
+        },
+        {
+            "feature": "radius_worst",
+            "importance": 0.08003910241401288
+        },
+        {
+            "feature": "concavity_mean",
+            "importance": 0.05862842898278015
+        },
+        {
+            "feature": "radius_mean",
+            "importance": 0.04388223410744234
+        },
+        {
+            "feature": "area_mean",
+            "importance": 0.04035334218138154
+        },
+        {
+            "feature": "concavity_worst",
+            "importance": 0.03349127462580331
+        }
+    ]
+}
