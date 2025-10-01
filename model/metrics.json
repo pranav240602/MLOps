@@ -1,0 +1,39 @@
+{
+    "model_name": "Logistic Regression",
+    "model_type": "LogisticRegression",
+    "accuracy": 0.956140350877193,
+    "precision": 0.9855072463768116,
+    "recall": 0.9444444444444444,
+    "f1_score": 0.9645390070921985,
+    "roc_auc": 0.9953703703703703,
+    "confusion_matrix": [
+        [
+            41,
+            1
+        ],
+        [
+            4,
+            68
+        ]
+    ],
+    "performance_summary": {
+        "accuracy_percent": "95.61%",
+        "precision_percent": "98.55%",
+        "recall_percent": "94.44%",
+        "f1_score_percent": "96.45%",
+        "roc_auc_percent": "99.54%"
+    },
+    "confusion_matrix_details": {
+        "true_negatives": 41,
+        "false_positives": 1,
+        "false_negatives": 4,
+        "true_positives": 68
+    },
+    "dataset_info": {
+        "training_samples": 455,
+        "test_samples": 114,
+        "n_features": 30,
+        "training_date": "2025-09-19T19:23:35.174945",
+        "dataset": "Breast Cancer Wisconsin (CSV)"
+    }
+}
