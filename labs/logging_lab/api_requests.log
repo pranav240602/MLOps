@@ -1,0 +1,3 @@
+2025-10-01 12:49:08,258 - API - INFO - POST /predict - Status: 200 - Time: 45ms
+2025-10-01 12:49:08,258 - API - WARNING - POST /predict - Status: 404 - Time: 12ms
+2025-10-01 12:49:08,258 - API - ERROR - POST /predict - Status: 500 - Time: 150ms

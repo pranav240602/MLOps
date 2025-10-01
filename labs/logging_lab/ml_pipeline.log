@@ -1,0 +1,12 @@
+2025-10-01 12:49:06,838 - ml_pipeline - INFO - Starting model training pipeline
+2025-10-01 12:49:06,838 - ml_pipeline - DEBUG - Loading training data...
+2025-10-01 12:49:07,343 - ml_pipeline - INFO - Data loaded successfully: 10000 samples
+2025-10-01 12:49:07,344 - ml_pipeline - INFO - Epoch 1/3 started
+2025-10-01 12:49:07,649 - ml_pipeline - INFO - Epoch 1 - Loss: 0.5000, Accuracy: 0.8000
+2025-10-01 12:49:07,649 - ml_pipeline - INFO - Epoch 2/3 started
+2025-10-01 12:49:07,950 - ml_pipeline - INFO - Epoch 2 - Loss: 0.2500, Accuracy: 0.9000
+2025-10-01 12:49:07,951 - ml_pipeline - INFO - Epoch 3/3 started
+2025-10-01 12:49:08,256 - ml_pipeline - INFO - Epoch 3 - Loss: 0.1667, Accuracy: 1.0000
+2025-10-01 12:49:08,257 - ml_pipeline - INFO - Model training completed successfully
+2025-10-01 12:49:08,257 - ml_pipeline - DEBUG - Saving model to disk...
+2025-10-01 12:49:08,257 - ml_pipeline - INFO - Model saved to: ./models/model_v1.pkl

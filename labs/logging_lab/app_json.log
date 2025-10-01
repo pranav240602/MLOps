@@ -1,0 +1,2 @@
+{"timestamp": "2025-10-01T16:49:08.270775", "level": "INFO", "logger": "json_logger", "message": "This is a JSON formatted log entry", "module": "logging_demo", "function": "<module>"}
+{"timestamp": "2025-10-01T16:49:08.271425", "level": "ERROR", "logger": "json_logger", "message": "This is a JSON formatted error", "module": "logging_demo", "function": "<module>"}
