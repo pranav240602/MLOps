@@ -1,0 +1,27 @@
+[2025-10-20T19:01:12.192+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Housing_Price_Prediction_Pipeline.evaluate_model manual__2025-10-20T19:01:06.321106+00:00 [queued]>
+[2025-10-20T19:01:12.195+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Housing_Price_Prediction_Pipeline.evaluate_model manual__2025-10-20T19:01:06.321106+00:00 [queued]>
+[2025-10-20T19:01:12.195+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2025-10-20T19:01:12.199+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): evaluate_model> on 2025-10-20 19:01:06.321106+00:00
+[2025-10-20T19:01:12.203+0000] {standard_task_runner.py:57} INFO - Started process 141 to run task
+[2025-10-20T19:01:12.204+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'Housing_Price_Prediction_Pipeline', 'evaluate_model', 'manual__2025-10-20T19:01:06.321106+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/housing_price_dag.py', '--cfg-path', '/tmp/tmpb6g9cevz']
+[2025-10-20T19:01:12.205+0000] {standard_task_runner.py:85} INFO - Job 14: Subtask evaluate_model
+[2025-10-20T19:01:12.221+0000] {task_command.py:415} INFO - Running <TaskInstance: Housing_Price_Prediction_Pipeline.evaluate_model manual__2025-10-20T19:01:06.321106+00:00 [running]> on host c02506775a14
+[2025-10-20T19:01:12.243+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='pranav' AIRFLOW_CTX_DAG_ID='Housing_Price_Prediction_Pipeline' AIRFLOW_CTX_TASK_ID='evaluate_model' AIRFLOW_CTX_EXECUTION_DATE='2025-10-20T19:01:06.321106+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-20T19:01:06.321106+00:00'
+[2025-10-20T19:01:12.244+0000] {logging_mixin.py:151} INFO - Starting model evaluation...
+[2025-10-20T19:01:12.572+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/sklearn/ensemble/_base.py:214: UserWarning: Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1
+  n_jobs = min(effective_n_jobs(n_jobs), n_estimators)
+
+[2025-10-20T19:01:12.623+0000] {logging_mixin.py:151} INFO - 
+==================================================
+[2025-10-20T19:01:12.623+0000] {logging_mixin.py:151} INFO - MODEL EVALUATION RESULTS
+[2025-10-20T19:01:12.623+0000] {logging_mixin.py:151} INFO - ==================================================
+[2025-10-20T19:01:12.623+0000] {logging_mixin.py:151} INFO - Root Mean Squared Error (RMSE): $51,188.67
+[2025-10-20T19:01:12.623+0000] {logging_mixin.py:151} INFO - Mean Absolute Error (MAE): $33,545.76
+[2025-10-20T19:01:12.623+0000] {logging_mixin.py:151} INFO - R² Score: 0.8084
+[2025-10-20T19:01:12.623+0000] {logging_mixin.py:151} INFO - ==================================================
+[2025-10-20T19:01:12.629+0000] {logging_mixin.py:151} INFO - Predictions saved to predictions.csv
+[2025-10-20T19:01:12.629+0000] {logging_mixin.py:151} INFO - Evaluation complete!
+[2025-10-20T19:01:12.629+0000] {python.py:194} INFO - Done. Returned value was: None
+[2025-10-20T19:01:12.634+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=Housing_Price_Prediction_Pipeline, task_id=evaluate_model, execution_date=20251020T190106, start_date=20251020T190112, end_date=20251020T190112
+[2025-10-20T19:01:12.676+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-10-20T19:01:12.684+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

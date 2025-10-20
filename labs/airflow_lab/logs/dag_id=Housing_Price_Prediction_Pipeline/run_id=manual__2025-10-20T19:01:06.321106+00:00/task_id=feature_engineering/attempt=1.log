@@ -1,0 +1,19 @@
+[2025-10-20T19:01:09.592+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Housing_Price_Prediction_Pipeline.feature_engineering manual__2025-10-20T19:01:06.321106+00:00 [queued]>
+[2025-10-20T19:01:09.595+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Housing_Price_Prediction_Pipeline.feature_engineering manual__2025-10-20T19:01:06.321106+00:00 [queued]>
+[2025-10-20T19:01:09.595+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2025-10-20T19:01:09.600+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): feature_engineering> on 2025-10-20 19:01:06.321106+00:00
+[2025-10-20T19:01:09.603+0000] {standard_task_runner.py:57} INFO - Started process 97 to run task
+[2025-10-20T19:01:09.605+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'Housing_Price_Prediction_Pipeline', 'feature_engineering', 'manual__2025-10-20T19:01:06.321106+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/housing_price_dag.py', '--cfg-path', '/tmp/tmpe1em73o7']
+[2025-10-20T19:01:09.605+0000] {standard_task_runner.py:85} INFO - Job 12: Subtask feature_engineering
+[2025-10-20T19:01:09.622+0000] {task_command.py:415} INFO - Running <TaskInstance: Housing_Price_Prediction_Pipeline.feature_engineering manual__2025-10-20T19:01:06.321106+00:00 [running]> on host c02506775a14
+[2025-10-20T19:01:09.643+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='pranav' AIRFLOW_CTX_DAG_ID='Housing_Price_Prediction_Pipeline' AIRFLOW_CTX_TASK_ID='feature_engineering' AIRFLOW_CTX_EXECUTION_DATE='2025-10-20T19:01:06.321106+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-20T19:01:06.321106+00:00'
+[2025-10-20T19:01:09.644+0000] {logging_mixin.py:151} INFO - Starting feature engineering...
+[2025-10-20T19:01:09.653+0000] {logging_mixin.py:151} INFO - Missing values before cleaning: 207
+[2025-10-20T19:01:09.655+0000] {logging_mixin.py:151} INFO - Missing values after cleaning: 0
+[2025-10-20T19:01:09.656+0000] {logging_mixin.py:151} INFO - New features created: rooms_per_household, bedrooms_per_room, population_per_household
+[2025-10-20T19:01:09.658+0000] {logging_mixin.py:151} INFO - Feature engineering completed! New shape: (20433, 16)
+[2025-10-20T19:01:09.748+0000] {logging_mixin.py:151} INFO - Processed data saved!
+[2025-10-20T19:01:09.748+0000] {python.py:194} INFO - Done. Returned value was: Feature engineering complete!
+[2025-10-20T19:01:09.755+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=Housing_Price_Prediction_Pipeline, task_id=feature_engineering, execution_date=20251020T190106, start_date=20251020T190109, end_date=20251020T190109
+[2025-10-20T19:01:09.784+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-10-20T19:01:09.793+0000] {taskinstance.py:2776} INFO - 1 downstream tasks scheduled from follow-on schedule check
