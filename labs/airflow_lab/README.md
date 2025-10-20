@@ -153,13 +153,6 @@ docker-compose restart
 ```bash
 docker-compose down
 ```
-
-## Screenshots
-
-All tasks completed successfully:
-
-![Airflow DAG Success](screenshots/dag_success.png)
-
 ## References
 
 - [Apache Airflow Documentation](https://airflow.apache.org/docs/)
