@@ -1,0 +1,80 @@
+{
+  "total_records": 4896,
+  "unique_tickers": 4,
+  "date_range": {
+    "start": "2020-02-20",
+    "end": "2024-12-30"
+  },
+  "missing_values": {
+    "Date": 0,
+    "Open": 0,
+    "High": 0,
+    "Low": 0,
+    "Close": 0,
+    "Volume": 0,
+    "Dividends": 0,
+    "Stock Splits": 0,
+    "Ticker": 0,
+    "Daily_Return": 0,
+    "Price_Change": 0,
+    "HL_Spread": 0,
+    "CO_Spread": 0,
+    "MA_10": 0,
+    "MA_50": 0,
+    "MA_Crossover": 0,
+    "RSI": 0,
+    "MACD": 0,
+    "MACD_Signal": 0,
+    "MACD_Diff": 0,
+    "BB_High": 0,
+    "BB_Mid": 0,
+    "BB_Low": 0,
+    "BB_Width": 0,
+    "BB_Pct": 0,
+    "Close_Lag_1": 0,
+    "Volume_Lag_1": 0,
+    "Close_Lag_5": 0,
+    "Volume_Lag_5": 0,
+    "Close_Lag_10": 0,
+    "Volume_Lag_10": 0
+  },
+  "tickers": [
+    "AAPL",
+    "GOOGL",
+    "MSFT",
+    "TSLA"
+  ],
+  "records_per_ticker": {
+    "AAPL": 1224,
+    "GOOGL": 1224,
+    "MSFT": 1224,
+    "TSLA": 1224
+  },
+  "price_statistics": {
+    "AAPL": {
+      "mean": 153.7646988139433,
+      "std": 40.55205289178364,
+      "min": 54.31693649291992,
+      "max": 258.1037292480469
+    },
+    "GOOGL": {
+      "mean": 119.47972040238723,
+      "std": 31.775616210354666,
+      "min": 52.3454704284668,
+      "max": 196.02093505859375
+    },
+    "MSFT": {
+      "mean": 290.7888801674438,
+      "std": 79.9492215590204,
+      "min": 129.17124938964844,
+      "max": 463.240966796875
+    },
+    "TSLA": {
+      "mean": 217.90253049875398,
+      "std": 79.4518430358562,
+      "min": 24.08133316040039,
+      "max": 479.8599853515625
+    }
+  },
+  "feature_count": 31
+}

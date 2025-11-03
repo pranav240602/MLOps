@@ -1,0 +1,104 @@
+schema: '2.0'
+stages:
+  download:
+    cmd: python src/download_data.py
+    deps:
+    - path: src/download_data.py
+      hash: md5
+      md5: b6afbde918f266f73c6e2ca251687507
+      size: 3071
+    params:
+      params.yaml:
+        download:
+          tickers:
+          - AAPL
+          - GOOGL
+          - MSFT
+          - TSLA
+          start_date: '2020-01-01'
+          end_date: '2024-12-31'
+          interval: 1d
+    outs:
+    - path: data/raw/combined_stocks.csv
+      hash: md5
+      md5: defdbc3afa3dd45dfbcc5ef864897afa
+      size: 610882
+  preprocess:
+    cmd: python src/preprocess.py
+    deps:
+    - path: data/raw/combined_stocks.csv
+      hash: md5
+      md5: defdbc3afa3dd45dfbcc5ef864897afa
+      size: 610882
+    - path: src/preprocess.py
+      hash: md5
+      md5: 31c18700ddb8fdfcae434fd3e358486b
+      size: 4051
+    params:
+      params.yaml:
+        preprocess:
+          remove_nulls: true
+          fill_method: ffill
+          min_data_points: 100
+    outs:
+    - path: data/processed/stock_data_cleaned.csv
+      hash: md5
+      md5: 933b6e139205aa2270e2d1bc432b25fb
+      size: 996366
+  feature_engineering:
+    cmd: python src/feature_engineering.py
+    deps:
+    - path: data/processed/stock_data_cleaned.csv
+      hash: md5
+      md5: 933b6e139205aa2270e2d1bc432b25fb
+      size: 996366
+    - path: src/feature_engineering.py
+      hash: md5
+      md5: c876b0f98e4243bc8444740f305dcfbe
+      size: 7886
+    params:
+      params.yaml:
+        feature_engineering:
+          ma_window_short: 10
+          ma_window_long: 50
+          rsi_period: 14
+          macd_fast: 12
+          macd_slow: 26
+          macd_signal: 9
+          bb_window: 20
+          bb_std: 2
+    outs:
+    - path: data/features/stock_data_features.csv
+      hash: md5
+      md5: d55b40cf10ca98af99c4de22cb7d484f
+      size: 2408511
+    - path: metrics/data_quality.json
+      hash: md5
+      md5: f09b9e0a003b4fa2637f15987286588e
+      size: 1559
+  split:
+    cmd: python src/split_data.py
+    deps:
+    - path: data/features/stock_data_features.csv
+      hash: md5
+      md5: d55b40cf10ca98af99c4de22cb7d484f
+      size: 2408511
+    - path: src/split_data.py
+      hash: md5
+      md5: 154df6f07898ccde092f9cd2f1a09d92
+      size: 3283
+    params:
+      params.yaml:
+        split:
+          test_size: 0.2
+          random_state: 42
+          shuffle: false
+    outs:
+    - path: data/features/test.csv
+      hash: md5
+      md5: 8ee557cf7ec43dad3abdaa411d48d54d
+      size: 479883
+    - path: data/features/train.csv
+      hash: md5
+      md5: 2561ff4a2ad586e7db9a9cba14e3136d
+      size: 1922750
