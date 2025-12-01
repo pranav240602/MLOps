@@ -1,0 +1,24 @@
+# Virtual Environment
+venv/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Data files (too large for Git)
+data/ml-latest-small/*.csv
+*.zip
+
+# Mac files
+.DS_Store
+
+# Anaconda
+anaconda_projects/
+
+# Jupyter temp files
+*.ipynb_checkpoints

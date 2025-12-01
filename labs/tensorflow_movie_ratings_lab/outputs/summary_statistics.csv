@@ -1,0 +1,2 @@
+total_ratings,total_users,total_movies,avg_rating,median_rating,anomalous_users_count,anomaly_percentage,drift_detected
+100836,610,9724,3.501556983616962,3.5,31,5.081967213114754,No

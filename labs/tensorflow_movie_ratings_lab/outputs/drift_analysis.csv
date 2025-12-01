@@ -1,0 +1,6 @@
+Metric,Value
+Training Mean,3.5084791986909307
+Production Mean,3.473869496231654
+Training Std,1.0333139597665064
+Production Std,1.078183544332348
+Mean Difference,0.03460970245927664
